@@ -4,13 +4,17 @@ class Program
 {
     static void Main()
     {
-        decimal expression = 0xFE;
-        decimal expressionTwo = 0x37;
-        decimal expressionThree = 0x10;
+        string number = Console.ReadLine();
+        string number2 = Console.ReadLine();
+        string number3 = Console.ReadLine();
 
-        Console.WriteLine(Convert.ToInt32(expression));
-        Console.WriteLine(Convert.ToInt32(expressionTwo));
-        Console.WriteLine(Convert.ToInt32(expressionThree));
+        int convert = Convert.ToInt32(number);
+        int convert2 = Convert.ToInt32(number2);
+        int convert3 = Convert.ToInt32(number3);
+
+        Console.WriteLine(convert);
+        Console.WriteLine(convert2);
+        Console.WriteLine(convert3);
     }
 }
 

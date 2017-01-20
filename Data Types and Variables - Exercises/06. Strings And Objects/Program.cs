@@ -6,7 +6,7 @@ class Program
     {
         string strOne = "Hello";
         string strTwo = "World";
-        object joining = strOne + " " + strTwo;
+        object joining = strOne + ' ' + strTwo;
         string joiningWord = joining.ToString();
         Console.WriteLine(joiningWord);
     }
