@@ -7,7 +7,7 @@ class Program
         int n = int.Parse(Console.ReadLine());
         int sum = 0;
         int letter = 0;
-        bool specialNum = false;
+        bool spcialNum = false;
 
         for (int i = 1; i <= n; i++)
         {
@@ -17,7 +17,7 @@ class Program
                 sum += i % 10;
                 i = i / 10;
             }
-            specialNum = (sum == 5) || (sum == 7) || (sum == 11);
+            bool specialNum = (sum == 5) || (sum == 7) || (sum == 11);
             Console.WriteLine($"{letter} -> {specialNum}");
             sum = 0;
             i = letter;
