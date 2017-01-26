@@ -1,17 +1,25 @@
 ﻿using System;
+
 class Program
 {
-    static double PrintRiceToPower(double number, int power)
+
+    static long PowerNumber(long baseNum, long power)
     {
-        return Math.Pow(number, power);
+        long result = 1;
+
+        for (long i = 0; i < power; i++)
+        {
+            result *= baseNum;
+        }
+
+        return (result);
     }
 
     static void Main()
     {
-        double number = double.Parse(Console.ReadLine());
-        int power = int.Parse(Console.ReadLine());
-
-        double result = PrintRiceToPower(number, power);
+        long baseNum = long.Parse(Console.ReadLine());
+        long power = long.Parse(Console.ReadLine());
+        long result = PowerNumber(baseNum, power);
 
         Console.WriteLine(result);
     }
