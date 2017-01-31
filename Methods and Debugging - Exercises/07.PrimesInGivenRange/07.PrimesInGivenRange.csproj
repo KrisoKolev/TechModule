@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_07.PrimesInGivenRange</RootNamespace>
-    <AssemblyName>_07.PrimesInGivenRange</AssemblyName>
+    <AssemblyName>07.PrimesInGivenRange</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -47,28 +47,28 @@ public class GeometryCalculator
         {
             double triangleArea = AreaOfTriangle();
 
-            Console.WriteLine(Math.Round(triangleArea, 2));
+            Console.WriteLine("{0:F2}", triangleArea);
         }
 
         else if (figure == "square")
         {
             double squareArea = AreaOfSquare();
 
-            Console.WriteLine(Math.Round(squareArea, 2));
+            Console.WriteLine("{0:f2}", squareArea);
         }
 
         else if (figure == "rectangle")
         {
             double rectangleArea = AreaOfRectangle();
 
-            Console.WriteLine(Math.Round(rectangleArea, 2));
+            Console.WriteLine("{0:f2}", rectangleArea);
         }
 
         else if (figure == "circle")
         {
             double circleArea = AreaOfCircle();
 
-            Console.WriteLine(Math.Round(circleArea, 2));
+            Console.WriteLine("{0:f2}", circleArea);
         }
         else
         {

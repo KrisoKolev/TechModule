@@ -3,38 +3,38 @@ using System.Collections.Generic;
 
 public class Program
 {
-    public static decimal CountDistance(decimal x, decimal y)
-    {
-        decimal distance = Math.Sqrt(Math.Pow(x, 2) + Math.Pow(y, 2));
-        return distance;
-    }
-
+    
     public static void Main()
     {
-        decimal x1 = decimal.Parse(Console.ReadLine());
-        decimal y1 = decimal.Parse(Console.ReadLine());
-        decimal x2 = decimal.Parse(Console.ReadLine());
-        decimal y2 = decimal.Parse(Console.ReadLine());
+        double x1 = double.Parse(Console.ReadLine());
+        double y1 = double.Parse(Console.ReadLine());
+        double x2 = double.Parse(Console.ReadLine());
+        double y2 = double.Parse(Console.ReadLine());
 
-        decimal countOne = CountDistance(x1, y1);
-        decimal countTwo = CountDistance(x2, y2);
+        Console.WriteLine(PrintPointCoordinates(x1, y1, x2, y2));
+    }
 
-        var list = new List<decimal>();
+    public static string PrintPointCoordinates(double x1, double y1, double x2, double y2)
+    {
+        double a = Math.Abs(y1);
+        double b = Math.Abs(x1);
+        double c = Math.Abs(a * a + b * b);
+        double a2 = Math.Abs(y2);
+        double b2 = Math.Abs(x2);
+        double c2 = Math.Abs(a2 * a2 + b2 * b2);
 
-        if (countOne >= countTwo)
+        string coordinates = "";
+
+        if (c < c2)
         {
-            list.Add(x2);
-            list.Add(y2);
+            coordinates = $"({x1}, {y1})";
         }
         else
         {
-            list.Add(x1);
-            list.Add(x2);
+            coordinates = $"({x2}, {y2})";
         }
 
-        Console.Write("(");
-        Console.Write(String.Join(", ", list));
-        Console.WriteLine(")");
+        return coordinates;
     }
 }
 
